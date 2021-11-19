@@ -1,0 +1,41 @@
+body {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navigationBar {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+.navIcons {
+    max-width: 20px;
+}
+
+.content {
+    background-color: lightblue;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.leftColumn {
+    display:flex;
+    flex-direction: column;
+    background-color: lightcoral;
+    flex-grow: 2;
+    justify-content: center;
+    
+}
+
+.rightColumn {
+    display:flex;
+    flex-direction: column;
+    background-color: lightcyan;
+    flex-grow: 1;
+    justify-content: center;
+}
