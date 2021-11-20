@@ -10,76 +10,103 @@
 </head>
 
 <body>
-
     <div class="navigationBar">
-        <div class="navMenuIcon"> <img class="navIcons" src="img/menuIcon.png" alt="Menu Icon"> </div>
-        <div class="navLogo"></div>
+        <div class="leftGroup">
+            <div class="navMenuIcon"> <img id="listIcon" src="img/menuIcon.svg" alt="Menu Icon"> </div>
+            <div class="navLogo"> <img class="youtubeLogo" src="img/youTubeLogo.png" alt="YouTube Logo"> </div>
+        </div>
         <div class="navSearchBarAndMic">
             <div class="navSearchBar">
-                <div class="searchBarBox"></div>
-                <div class="searchBarButton"></div>
+                <div class="searchBarBox">
+                    <input class="searchBarBox" id="search" type="text" placeholder=" Search...">
+                </div>
+                <div class="searchBarButton"> <img class="searchIcon navIcons" src="img/searchIcon.svg"
+                        alt="Search Icon"> </div>
+
             </div>
-            <div class="searchBarMic"></div>
+            <div class="searchBarMic"> <img class="micIcon navIcons" src="img/micIcon.svg" alt="Mic icon"> </div>
         </div>
-        <div class="navIcons">
-            <div class="cameraIcon"></div>
-            <div class="appsIcon"></div>
-            <div class="bellIcon"></div>
-            <div class="avatarIcon"></div>
+        <div class="rightIcons">
+            <div class="cameraIcon"> <img class="navIcons" src="img/createIcon.svg" alt="Create Icon"> </div>
+            <div class="appsIcon"> <img class="navIcons" src="img/appsIcon.svg" alt="Apps Icon"> </div>
+            <div class="bellIcon"> <img class="navIcons" src="img/bellIcon.svg" alt="Bell Icon"> </div>
+            <div class="userAvatar"> <img class="avatar" src="img/avatar1.png" alt="User Avatar"></div>
         </div>
     </div>
     <div class="content">
         <div class="leftColumn">
-            left
-            <div class="video"></div>
-            <div class="videoTitle"></div>
-            <div class="videoStats">
-                <div class="plays"></div>
-                <div class="likes"></div>
-                <div class="share"></div>
-                <div class="save"></div>
-                <div class="more"></div>
-            </div>
-            <div class="videoInfoAndDescription">
-                <div class="youtuberInfo">
-                    <div class="youtuberCoreInfo">
-                        <div class="youtuberLogo"></div>
-                        <div class="youtuberName"></div>
-                        <div class="youtuberSubsCount"></div>
+            
+            <div class="video">
+
+                <iframe src="https://www.youtube.com/embed/_3hqItiFkFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            
+                <div class="videoTitle"> SIMULADOR DE ESGRIMA - HELLISH QUART Gamerplay Español</div>
+                <div class="videoStats">
+                    <div class="plays">24.525</div>
+                    <div class="likes">
+                        <img class="likesIcons" src="img/likeIcon.svg" alt="Like Icon">
+                        <div class="likesnumber">1105</div>
+                        <img class="likesIcons" src="img/dislikeIcon.svg" alt="Dislike Icon">
+                        <div class="likesnumber">42</div>
                     </div>
-                    <div class="suscribeButton"></div>
+                    <div class="share">
+                        <img class="shareIcon" src="img/shareIcon.svg" alt="Share Icon">
+                        <div class="subtitleText">SHARE</div>
+                    </div>
+                    <div class="clip">
+                        <img class="clipIcon" src="img/clipIcon.svg" alt="Clip Icon">
+                        <div class="subtitleText">CLIP</div>
+                    </div>
+                    <div class="save">
+                        <img class="saveIcon" src="img/saveIcon.svg" alt="Save Icon">
+                        <div class="subtitleText">SAVE</div>
+                    </div>
+                    <div class="more">
+                        <img class="saveIcon" src="img/dotsIcon.svg" alt="More Icon">
+                    </div>
                 </div>
-                <div class="videoDescription">
+                <div class="videoInfoAndDescription">
+                    <div class="youtuberInfo">
+                        <div class="youtuberCoreInfo">
+                            <div class="youtuberLogo"></div>
+                            <div class="youtuberName"></div>
+                            <div class="youtuberSubsCount"></div>
+                        </div>
+                        <div class="suscribeButton"></div>
+                    </div>
+                    <div class="videoDescription">
+                    </div>
                 </div>
-            </div>
-            <div class="commentsSection">
-                <div class="commentsInfo">
-                    <div class="commentsCount"></div>
-                    <div class="commentsSortButton"></div>
-                </div>
-                <div class="commentEditor">
-                    <div class="userAvatar"></div>
-                    <div class="userInput">
-                        <div class="commentInput"></div>
-                        <div class="commentButtons">
-                            <div class="buttonCancel"></div>
-                            <div class="buttonSubmit"></div>
+                <div class="commentsSection">
+                    <div class="commentsInfo">
+                        <div class="commentsCount"></div>
+                        <div class="commentsSortButton"></div>
+                    </div>
+                    <div class="commentEditor">
+                        <div class="userAvatar"></div>
+                        <div class="userInput">
+                            <div class="commentInput"></div>
+                            <div class="commentButtons">
+                                <div class="buttonCancel"></div>
+                                <div class="buttonSubmit"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="commentsPosted">
-                    <div class="comment">
-                        <div class="userAvatar"></div>
-                        <div class="userComment">
-                            <div class="userCommentTitle">
-                                <div class="userName"></div>
-                                <div class="commentDate"></div>
-                            </div>
-                            <div class="userCommentText"></div>
-                            <div class="userCommentFooter">
-                                <div class="userCommentLike"></div>
-                                <div class="userCommentDislike"></div>
-                                <div class="userCommentReply"></div>
+                    <div class="commentsPosted">
+                        <div class="comment">
+                            <div class="userAvatar"></div>
+                            <div class="userComment">
+                                <div class="userCommentTitle">
+                                    <div class="userName"></div>
+                                    <div class="commentDate"></div>
+                                </div>
+                                <div class="userCommentText"></div>
+                                <div class="userCommentFooter">
+                                    <div class="userCommentLike"></div>
+                                    <div class="userCommentDislike"></div>
+                                    <div class="userCommentReply"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +114,7 @@
             </div>
         </div>
         <div class="rightColumn">
-            right
+            Nader es marico
             <div class="filters"></div>
             <div class="suggestions">
                 <div class="suggestedVideo">

@@ -2,16 +2,96 @@ body {
     display:flex;
     flex-direction: column;
     text-align: center;
+    font-family:roboto;
 }
 
 .navigationBar {
-    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
     text-align: center;
-    padding: 10px;
+    
+}
+
+.leftGroup {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    gap:10px;
+    padding-left: 20px;
+}
+
+#listIcon {
+    width: 24px;
+}
+
+.rightIcons {
+    display:flex;
+    justify-content: end;
+    flex-direction:row;
+    flex:1;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    padding-right: 20px;
 }
 
 .navIcons {
-    max-width: 20px;
+    display:flex;
+    width: 24px;
+}
+
+.youtubeLogo {
+    max-width: 100px;
+    display:flex;
+   
+}
+
+.navSearchBarAndMic {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    gap:10px;
+}
+
+
+.navSearchBar {
+    border: solid 2px lightgray;
+    display: flex;
+    flex-direction: row;
+    flex:10;
+    gap: 2px;
+}
+
+.searchBarBox {
+    background-color: white;
+    display:flex;
+    flex-grow:3;
+    border-style:none;
+    
+}
+
+.searchBarMic {
+ display: flex;
+ align-items: center;
+ flex:1;
+}
+
+.searchBarButton {
+    border-left:lightgray solid 2px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+.searchIcon {
+    max-width: 24px;
+    display:flex;
+    flex-grow:1;
+
+    
 }
 
 .content {
@@ -26,16 +106,75 @@ body {
 .leftColumn {
     display:flex;
     flex-direction: column;
-    background-color: lightcoral;
-    flex-grow: 2;
-    justify-content: center;
+    background-color: white;
+    flex: 1.5;
+    justify-content: end;
+    align-items: end;
+    padding-right: 20px;
     
+    
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    max-width: 565px;
+    align-items: start;
+    justify-content: start;
+   
+}
+
+.videoTitle {
+    text-align: left;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 5px;
 }
 
 .rightColumn {
     display:flex;
     flex-direction: column;
     background-color: lightcyan;
-    flex-grow: 1;
+    flex:1;
     justify-content: center;
+    
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.videoStats {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+.plays, .likes, .share, .clip,
+.save, .more {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap:10px;
+}
+
+.plays {
+    font-size: 25px;
+}
+
+.videoStats div img {
+width: 24px;
+height: 24px;
+}
+
+
+iframe {
+    min-width: 560px;
+    min-height: 315px;
 }
